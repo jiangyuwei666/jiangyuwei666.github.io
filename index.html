@@ -154,6 +154,104 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-[测试]pychram不能导包？" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/15/[测试]pychram不能导包？/">Pychram不能导包？</a>
+    </h1>
+  
+
+        
+        <a href="/2018/09/15/[测试]pychram不能导包？/" class="archive-article-date">
+  	<time datetime="2018-09-15T09:46:15.998Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-15</time>
+</a>
+        
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="震惊，为什么会这样"><a href="#震惊，为什么会这样" class="headerlink" title="震惊，为什么会这样"></a>震惊，为什么会这样</h3><p>问题是这样发生的:<br><br>我是直接用Anaconda直接装的Python3.6<br><br>因为爬虫需要很多库都在里面，直接一键全部安装<br><br>安装完成了pycharm的时候就想试试环境是否搭建好了导入了requests库<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line"><span class="comment">#这是对网页XML结构进行解析的模块</span></span><br></pre></td></tr></table></figure></p>
+<p>可是发现报错了，导不进去，刚开始以为是没有装这个模块<br><br>到cmd里去下载</p>
+<p><img src="https://github.com/jiangyuwei666/Trick/blob/master/pic/cmd%E4%B8%8B%E8%BD%BDlxml.png" alt="cmd下载lxml"></p>
+<p>显示的已经安装了,只是叫我更新Anaconda，怀疑是Python没有安排上<br><br>又去检查Python</p>
+<p><img src="https://github.com/jiangyuwei666/Trick/blob/master/pic/%E6%A3%80%E6%9F%A5python.png" alt="检查Python"></p>
+<p>而且发现lxml也能导入</p>
+<p>最后排查出来是Python的路径没有放对</p>
+<p><img src="https://github.com/jiangyuwei666/Trick/blob/master/pic/python%E8%B7%AF%E5%BE%84.png" alt="Python路径检查"></p>
+<p>这里我们创建这个项目的时候，不知道什么原因它重新在一个目录里创建了一个python？显示是这么显示的。<br><br>而且我记得以前创建一个项目的时候里面是什么东西都没有，现在多了个这个东西</p>
+<p><img src="https://github.com/jiangyuwei666/Trick/blob/master/pic/%E5%A4%9A%E7%9A%84%E6%96%87%E4%BB%B6.png" alt="多的文件"></p>
+<p>最后在正确的导入了Python后，打开的项目是这样的</p>
+<p><img src="https://github.com/jiangyuwei666/Trick/blob/master/pic/%E6%AD%A3%E5%B8%B8.png" alt="正常情况"></p>
+<p>所以第一次使用Pycharm的时候出现这种错误的时候可以检查一下python的路径是否放对了</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小东西</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">trap</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+        <span id="busuanzi_container_page_pv">
+          |阅读量<span id="busuanzi_value_page_pv"></span>
+        </span>
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/09/15/[测试]pychram不能导包？/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-nice" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -337,6 +435,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">好玩</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">小东西</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">trap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
             
             <div class="clearfix"></div>
