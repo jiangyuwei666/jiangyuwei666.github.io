@@ -16,16 +16,16 @@
 <meta property="og:site_name" content="小蒋娃儿的博客">
 <meta property="og:description" content="震惊，为什么会这样问题是这样发生的:我是直接用Anaconda直接装的Python3.6">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://github.com/jiangyuwei666/Trick/blob/master/pic/cmd%E4%B8%8B%E8%BD%BDlxml.png">
-<meta property="og:image" content="https://github.com/jiangyuwei666/Trick/blob/master/pic/%E6%A3%80%E6%9F%A5python.png">
-<meta property="og:image" content="https://github.com/jiangyuwei666/Trick/blob/master/pic/python%E8%B7%AF%E5%BE%84.png">
-<meta property="og:image" content="https://github.com/jiangyuwei666/Trick/blob/master/pic/%E5%A4%9A%E7%9A%84%E6%96%87%E4%BB%B6.png">
-<meta property="og:image" content="https://github.com/jiangyuwei666/Trick/blob/master/pic/%E6%AD%A3%E5%B8%B8.png">
-<meta property="og:updated_time" content="2018-09-15T13:37:55.763Z">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006BhB5Ogy1fvb7oej6xdj30xz0hrmxy.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006BhB5Ogy1fvb7ofe9mkj30xz0hrq3r.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006BhB5Ogy1fvb7oejp34j30zp0opabm.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006BhB5Ogy1fvb7oeibdvj30dc07ijrp.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006BhB5Ogy1fvb7oel0y1j31hc0sm0up.jpg">
+<meta property="og:updated_time" content="2018-09-16T03:20:06.889Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【测试】Pychram不能导包？">
 <meta name="twitter:description" content="震惊，为什么会这样问题是这样发生的:我是直接用Anaconda直接装的Python3.6">
-<meta name="twitter:image" content="https://github.com/jiangyuwei666/Trick/blob/master/pic/cmd%E4%B8%8B%E8%BD%BDlxml.png">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/006BhB5Ogy1fvb7oej6xdj30xz0hrmxy.jpg">
   
     <link rel="alternative" href="/atom.xml" title="小蒋娃儿的博客" type="application/atom+xml">
   
@@ -193,16 +193,16 @@
         <h3 id="震惊，为什么会这样"><a href="#震惊，为什么会这样" class="headerlink" title="震惊，为什么会这样"></a>震惊，为什么会这样</h3><p>问题是这样发生的:<br><br>我是直接用Anaconda直接装的Python3.6<br><a id="more"></a><br><br>因为爬虫需要很多库都在里面，直接一键全部安装<br><br>安装完成了pycharm的时候就想试试环境是否搭建好了导入了requests库</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line"><span class="comment">#这是对网页XML结构进行解析的模块</span></span><br></pre></td></tr></table></figure>
 <p>可是发现报错了，导不进去，刚开始以为是没有装这个模块<br><br>到cmd里去下载</p>
-<p><img src="https://github.com/jiangyuwei666/Trick/blob/master/pic/cmd%E4%B8%8B%E8%BD%BDlxml.png" alt="cmd下载lxml"></p>
+<p><img src="http://ww1.sinaimg.cn/large/006BhB5Ogy1fvb7oej6xdj30xz0hrmxy.jpg" alt="cmd下载lxml"></p>
 <p>显示的已经安装了,只是叫我更新Anaconda，怀疑是Python没有安排上<br><br>又去检查Python</p>
-<p><img src="https://github.com/jiangyuwei666/Trick/blob/master/pic/%E6%A3%80%E6%9F%A5python.png" alt="检查Python"></p>
+<p><img src="http://ww1.sinaimg.cn/large/006BhB5Ogy1fvb7ofe9mkj30xz0hrq3r.jpg" alt="检查Python"></p>
 <p>而且发现lxml也能导入</p>
 <p>最后排查出来是Python的路径没有放对</p>
-<p><img src="https://github.com/jiangyuwei666/Trick/blob/master/pic/python%E8%B7%AF%E5%BE%84.png" alt="Python路径检查"></p>
+<p><img src="http://ww1.sinaimg.cn/large/006BhB5Ogy1fvb7oejp34j30zp0opabm.jpg" alt="Python路径检查"></p>
 <p>这里我们创建这个项目的时候，不知道什么原因它重新在一个目录里创建了一个python？显示是这么显示的。<br><br>而且我记得以前创建一个项目的时候里面是什么东西都没有，现在多了个这个东西</p>
-<p><img src="https://github.com/jiangyuwei666/Trick/blob/master/pic/%E5%A4%9A%E7%9A%84%E6%96%87%E4%BB%B6.png" alt="多的文件"></p>
+<p><img src="http://ww1.sinaimg.cn/large/006BhB5Ogy1fvb7oeibdvj30dc07ijrp.jpg" alt="多的文件"></p>
 <p>最后在正确的导入了Python后，打开的项目是这样的</p>
-<p><img src="https://github.com/jiangyuwei666/Trick/blob/master/pic/%E6%AD%A3%E5%B8%B8.png" alt="正常情况"></p>
+<p><img src="http://ww1.sinaimg.cn/large/006BhB5Ogy1fvb7oel0y1j31hc0sm0up.jpg" alt="正常情况"></p>
 <p>所以第一次使用Pycharm的时候出现这种错误的时候可以检查一下python的路径是否放对了</p>
 
       
@@ -221,7 +221,7 @@
                   <div class="reward-box">
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="/source/img/Alipay.png">
+                      <img class="reward-img" src="/img/Alipay.png">
                       <span class="reward-type">支付宝</span>
                     </div>
                     
