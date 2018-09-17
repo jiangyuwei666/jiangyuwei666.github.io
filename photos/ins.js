@@ -116,8 +116,8 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'https://raw.githubusercontent.com/jiangyuwei666/MyBlogBackUp/blob/master/min_photos/' + data.link[i];
-          var src = 'https://raw.githubusercontent.com/jiangyuwei666/MyBlogBackUp/blob/master/photos/' + data.link[i];
+          var minSrc = 'https://raw.githubusercontent.com/jiangyuwei666/MyBlogBackUp/master/min_photos/' + data.link[i];
+          var src = 'https://raw.githubusercontent.com/jiangyuwei666/MyBlogBackUp/master/min_photos/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '';
@@ -150,7 +150,7 @@
         var m = data[i].m;
         var src = replacer(data[i].src);
         var text = data[i].text;
-        var key = y + "" + ((m + "").length == 1 ? "0" + m : m);
+        var key = y + "" + ((m + "").length == 1 ? "0" + m : mF);
         if (imgObj[key]) {
           imgObj[key].srclist.push(src);
           imgObj[key].text.push(text);
@@ -169,7 +169,7 @@
     function loadData(success) {
       if (!searchData) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', './ins.json?t=' + +new Date(), true);
+        xhr.open('GET', './data.json?t=' + +new Date(), true);
 
         xhr.onload = function() {
           if (this.status >= 200 && this.status < 300) {
