@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="小蒋娃儿的博客">
 <meta property="og:description" content="之前接触python的时候都是零零散散的学了一点。最近买了几本书，打算重投开始好好学一下呗。看的是《Python基础教程（第三版）》和《Python核心编程（第三版）》。这就相当于是读书笔记了，主要整理一下我认为很容易忽略的小知识。先看完第一本书，第二本书的补充再在里面找相应内容写进去。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-13T08:58:01.882Z">
+<meta property="og:updated_time" content="2018-11-20T00:44:37.412Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="重学python">
 <meta name="twitter:description" content="之前接触python的时候都是零零散散的学了一点。最近买了几本书，打算重投开始好好学一下呗。看的是《Python基础教程（第三版）》和《Python核心编程（第三版）》。这就相当于是读书笔记了，主要整理一下我认为很容易忽略的小知识。先看完第一本书，第二本书的补充再在里面找相应内容写进去。">
@@ -321,7 +321,13 @@
 </li>
 </ul>
 <ul>
-<li>index<br>返回查找元素第一次出现的索引。</li>
+<li><p>index<br>返回查找元素第一次出现的索引。</p>
+</li>
+<li><p>enumerate()</p>
+<p>传入一个列表参数，用这个方法能返回一个可迭代的<code>enumerate</code>对象。使用这个方法能在遍历的时候同时获取索引和元素。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="string">'a'</span>, <span class="string">'qwe'</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i, x <span class="keyword">in</span> enumerate(a):</span><br><span class="line">    print(i, x)</span><br><span class="line">print(type(enumerate(a)))</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">0 1</span><br><span class="line">1 1</span><br><span class="line">2 3</span><br><span class="line">3 4</span><br><span class="line">4 a</span><br><span class="line">5 qwe</span><br><span class="line">&lt;class &apos;enumerate&apos;&gt;</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 <ul>
 <li><p>乘法</p>
@@ -648,6 +654,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2018-11-27/看牛客网有感.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          自闭
+        
+      </div>
+    </a>
+  
   
     <a href="/2018-09-13/nice.html" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">博客搞一搞</div>
@@ -796,6 +811,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">trap</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">学习计划</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">感想</a>
               </li>
             
             <div class="clearfix"></div>
